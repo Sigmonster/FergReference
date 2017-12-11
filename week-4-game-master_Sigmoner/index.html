@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Crystal Collector</title>
+		<!-- Added link to the jQuery Library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Added a link to Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h1>Crystal Collector</h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 ">
+							<p>You will be given a random number at the start of the game.</p>
+							<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+							<p>You win the game by matching your total score to a random number, you lose the game if your score goes above the random number.</p>
+							<p>The value of each crystal is hidden from  you until you click on it.</p>
+							<p>Each time when the game starts, the game will change the value of each crystal.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-6">
+									<h3>Losses:&nbsp;<span id="losses">0</span></h3>
+								</div>
+								<div class="col-xs-6">
+									<h3>Wins:&nbsp;<span id="wins">0</span></h3>
+								</div>
+							</div>
+							<!-- END RANDOM NUMBER FIELD -->
+						</div>
+						<!-- END ROW 2 SUB ROW 1 COL 1 -->
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-6 class random-box">
+									<h3>Random Number:&nbsp;<span id="random-number"></span></h3>
+								</div>
+								<div class="col-xs-6">
+									<h3>Total Score:&nbsp;<span id="total-score"></span></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
+					<div class="class gem-buttons row">
+						<div class="col-xs-6 col-md-3">
+							<input type="image" src="assets/images/crystals.svg" id="crystal-1" class="crystal img-responsive" value="0"/>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<input type="image" src="assets/images/crystals.svg" id="crystal-2" class="crystal img-responsive" value="0"/>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<input type="image" src="assets/images/crystals.svg" id="crystal-3" class="crystal img-responsive" value="0"/>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<input type="image" src="assets/images/crystals.svg" id="crystal-4" class="crystal img-responsive" value="0"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- END CONTAINER -->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+	</body>
+</html>

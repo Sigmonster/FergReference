@@ -1,0 +1,17 @@
+body{
+background: url("../images/caveBackground.jpg");
+font-family: 'Macondo', cursive;
+color: #ffffff;
+
+}
+
+
+.crystal {
+    width:100%;
+    padding:10%;
+}
+
+h3 span{
+    font-weight: bolder;
+    font-size: 115%;
+}
